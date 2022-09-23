@@ -13,6 +13,18 @@ To my surprise there was no proper Open Source Tool that I found for doing this.
 
 Hope this tool would help people who have faced similar problem.
 
+##### Example
+```
+    curl --request POST 'https://<ingress-url>/add-reminders' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+        "title": "<Title>",
+        "reminder_type": "<REMINDER_TYPE>",
+        "reminder_message": "<Reminder Message>",
+        "duration": "<Duration: 10s|365d"
+    }'
+```
+
 
 
 ### Developer's Note
